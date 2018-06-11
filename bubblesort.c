@@ -17,10 +17,10 @@ int main() {
 		if (i==total-1) printf("\n" );
 	}
 	*/
-	int sum=total;
+	int temptotal=total;
 	for(int a=0;a<total;a++){
-		for(int i=0;i<sum-1;i++){
-			for (int j=i+1;j<sum;j++){
+		for(int i=0;i<temptotal-1;i++){
+			for (int j=i+1;j<temptotal;j++){
 				if(num[j] < num[i]){
 					int temp=num[i];
 					num[i]=num[j];
@@ -35,7 +35,7 @@ int main() {
 				i++;
 			}
 			i=0;
-			sum--;
+			temptotal--;
 		}	
 	}
 	
