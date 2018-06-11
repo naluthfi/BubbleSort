@@ -26,12 +26,14 @@ int main() {
 					num[i]=num[j];
 					num[j]=temp;
 				}
+				/*
 				printf("\nstep %d = ", step);
 				step++;
 				for (int i=0;i<total;i++){
 					printf("%d " , num[i]);
 					if (i==total-1) printf("\n" );
 				}
+				*/
 				i++;
 			}
 			i=0;
@@ -39,7 +41,7 @@ int main() {
 		}	
 	}
 	
-	printf("\nThis is the result by bubble sort: " );
+	printf("\nAfter bubble sorting: " );
 	for (int i=0;i<total;i++){
 		printf("%d " , num[i]);
 		if (i==total-1) printf("\n" );
