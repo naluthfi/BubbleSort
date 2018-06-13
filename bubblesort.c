@@ -51,6 +51,7 @@ int main()
 	for (int i = 0; i < total; i++)
 	{
 		printf ("%d " , num[i]);
-		if (i == total - 1) printf ("\n");
+		if (i == total - 1)
+			printf ("\n");
 	}
 }
