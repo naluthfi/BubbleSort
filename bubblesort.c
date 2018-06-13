@@ -44,9 +44,9 @@ int main()
 		loop++;
 	}
 	clock_gettime(CLOCK_MONOTONIC, &tend);
-	printf("\n\nExecution Time: %.9f seconds",
-        	((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) - 
-        	((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec));
+	printf("\n\nExecution Time: %.2f nanoseconds", (
+        	(((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) - 
+        	((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec))*1000000000));
 	printf ("\n\nAfter bubble sorting: ");
 	for (int i = 0; i < total; i++)
 	{
