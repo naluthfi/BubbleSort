@@ -20,7 +20,7 @@ int main()
 	*/
 	int temptotal = total;
 	int loop = 1;
-	struct timespec tstart={0,0}, tend={0,0};
+	struct timespec tstart = {0,0}, tend = {0,0};
 	clock_gettime(CLOCK_MONOTONIC, &tstart);
 	for (int a = 0; a < total; a++)
 	{
@@ -44,7 +44,7 @@ int main()
 		loop++;
 	}
 	clock_gettime(CLOCK_MONOTONIC, &tend);
-	printf("\n\nExecution Time: %.2f nanoseconds", (
+	printf ("\n\nExecution Time: %.2f nanoseconds", (
         	(((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) - 
         	((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec))*1000000000));
 	printf ("\n\nAfter bubble sorting: ");
